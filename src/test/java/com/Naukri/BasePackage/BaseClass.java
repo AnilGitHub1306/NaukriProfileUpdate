@@ -21,6 +21,7 @@ public class BaseClass {
 
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
 		options.addArguments("--disable-extensions"); // Disable extensions
 		options.setAcceptInsecureCerts(true);
 		options.addArguments("--disable-popup-blocking");
